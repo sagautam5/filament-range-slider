@@ -123,7 +123,7 @@ class RangeSlider extends Field
         return $this->step;
     }
 
-    public function getSize(): RangePickerSize
+    public function getSize(): RangeSliderSize
     {
         return $this->size;
     }
