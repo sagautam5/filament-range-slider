@@ -1,0 +1,33 @@
+{
+    "name": "sagautam5/filament-range-slider",
+    "description": "Filament Range Slider",
+    "type": "library",
+    "require-dev": {
+        "pestphp/pest": "3.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sagautam5\\FilamentRangeSlider\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "class": "Sagautam5\\FilamentRangeSlider",
+        "laravel": {
+            "providers": [
+                "Sagautam5\\FilamentRangeSlider\\Providers\\RangeSliderServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Sagar Gautam"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
