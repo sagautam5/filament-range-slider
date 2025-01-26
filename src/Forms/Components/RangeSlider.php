@@ -2,10 +2,10 @@
 
 namespace Sagautam5\FilamentRangeSlider\Forms\Components;
 
-use App\RangePickerSize;
 use Closure;
 use Filament\Forms\Components\Field;
 use Filament\Support\Concerns\HasExtraAttributes;
+use Sagautam5\FilamentRangeSlider\Enums\RangeSliderSize;
 
 class RangeSlider extends Field
 {
@@ -21,7 +21,7 @@ class RangeSlider extends Field
     
     protected int $step = 1;
     
-    protected RangePickerSize $size = RangePickerSize::MEDIUM;
+    protected RangeSliderSize $size = RangeSliderSize::MEDIUM;
     
     protected string $accentColor = '#f59e0b';
     
@@ -61,7 +61,7 @@ class RangeSlider extends Field
         return $this;
     }
 
-    public function size(RangePickerSize $size): static
+    public function size(RangeSliderSize $size): static
     {
         $this->size = $size;
 
