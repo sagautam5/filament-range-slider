@@ -7,7 +7,7 @@ A plugin to add range slider field in filament forms.
 You can install the package via composer:
 
 ```bash
-composer require ibrahimbougaoua/filament-rating-star
+composer require sagautam5/filament-range-slider
 ```
 
 ## Usage
