@@ -8,7 +8,7 @@
 
             <style type="text/css">
                 input[id="{{$getId()}}"] {
-                    accent-color: {!!$getAccentColor() !!};
+                    accent-color: {!!$getColor() !!};
                 }
                 input[id="{{$getId()}}"]::-webkit-slider-thumb {
                     margin-top: {!! ($getSize()->marginTop()) !!};
@@ -24,7 +24,7 @@
                     x-model="state"
                     type="range" 
                     value="{{$getDefault()}}" 
-                    class="w-full cursor-pointer"
+                    class="w-full bg-gray-300 rounded-lg appearance-none cursor-pointer focus:outline-none dark:bg-gray-700"
                     min="{{$getMinValue()}}"
                     max="{{$getMaxValue()}}"
                     step="{{$getStep()}}"
